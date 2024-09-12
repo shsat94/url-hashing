@@ -16,10 +16,14 @@
             justify-content: center;
             flex-direction: column;
             max-width: fit-content;
+            min-width: 30rem;
             gap: 1rem;
         }
         .btn{
             cursor: pointer;
+        }
+        .url{
+            font-size: 2rem;
         }
     </style>
     <title>URL Hashing</title>
@@ -36,6 +40,8 @@
         <label for="time">Enter the time to which it is will be valid</label>
         <input type="time" name="time" id="time">
         <button class="btn" id="submit">Get URL</button>
+        <label for="url">Hashed url</label>
+        <p class="url"></p>
     </div>
 
     <script src="script.js"></script>

@@ -3,6 +3,7 @@ const maxclicks = document.querySelector('#maxclicks');
 const date = document.querySelector('#date');
 const time = document.querySelector('#time');
 const button = document.querySelector('#submit');
+const hashedurlslot=document.querySelector('.url');
 
 const porturl="http://localhost:5000";
 
@@ -37,7 +38,7 @@ button.addEventListener('click', async(e) => {
     })
 
     const hashedurl=await res.json();
-    console.log(hashedurl);
+    hashedurlslot.innerText=hashedurl.shortenedUrl;
 })
 
 
