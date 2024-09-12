@@ -1,0 +1,15 @@
+{
+  "name": "url-hashing-backend",
+  "version": "1.0.0",
+  "description": "This is the backend for the url hashing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "satyarth sharma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "mongoose": "^8.6.2"
+  }
+}
