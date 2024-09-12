@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const crypto = require('crypto');
 const urlModel = require('../database/urlSchema');
+const porturl="http://localhost:5000";
 
 
 const genHashedUrl = (url) => {
@@ -26,7 +27,7 @@ router.post('/shortend', async (req, res) => {
 
         //saving the model
         await newUrl.save();
-        res.json({ shortenedUrl: `http://localhost:5000/${hashedUrl}`});
+        res.json({ shortenedUrl: `${porturl}/${hashedUrl}`});
         
     } catch (error) {
         console.log(error);
