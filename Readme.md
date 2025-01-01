@@ -113,9 +113,9 @@ url-hashing
 │   ├── routes
 │   ├── index.js
 │   └── .env
-├── frontend
-│   ├── index.html
-│   ├── script.js
+|
+├── index.html
+├── script.js
 └── README.md
 ```
 

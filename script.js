@@ -5,7 +5,7 @@ const time = document.querySelector('#time');
 const button = document.querySelector('#submit');
 const hashedurlslot=document.querySelector('.url');
 
-const porturl="http://localhost:5000";
+const porturl="https://urlhasherio.onrender.com";
 
 const formatDateToISOString = (year, month, day, hour, minute, second) => {
     const date = new Date(Date.UTC(year, month - 1, day, hour, minute, second));
