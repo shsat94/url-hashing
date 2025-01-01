@@ -1,9 +1,15 @@
 const mongoose=require('mongoose');
-const MONGO_URI='your mongo uri';
+const MONGO_URI=process.env.MONGOURI;
 
 const connectToDb=()=>{
-    mongoose.connect(MONGO_URI);
-    console.log('connected');
+    try {
+        
+        mongoose.connect(MONGO_URI);
+        console.log("Successfully Connected to Database");
+
+    } catch (error) {
+        console.log(error);
+    }
 };
 
 module.exports=connectToDb;

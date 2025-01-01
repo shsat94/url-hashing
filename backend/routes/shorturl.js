@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const crypto = require('crypto');
 const urlModel = require('../database/urlSchema');
-const porturl="http://localhost:5000";
+const porturl=process.env.HOST;
 
 
 const genHashedUrl = (url) => {

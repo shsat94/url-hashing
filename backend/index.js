@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express=require('express');
 const connectToDb = require('./database/db');
 const port=5000;
